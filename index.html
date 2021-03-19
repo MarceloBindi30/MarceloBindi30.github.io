@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Marcelo Bindi Leal</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="claro">
+    
+    <section class="foto">
+        <img id="minhafoto" src="foto.jpg" width="200" height="200" />
+    </section>  
+
+    <section class="info">
+        <h1 id="meunome">Marcelo Bindi</h1>
+    </section>
+
+    <section class="controles">
+        <button id="light">Modo claro</button>
+        <button id="dark">Modo escuro</button>
+    </section>
+
+    <section class="sobre">
+        <h2>Sobre</h2>
+        <p>Marcelo Bindi Leal</p>
+        <p>Sou aluno do terceiro ano do ensino médio no Instituto Federal de São Paulo no curso de Informática integrado ao ensino Médio. </p>
+    </section>
+
+    <section class="interesses">
+        <h2>Principais interesses de pesquisa</h2>
+        <ul>
+            <li class="interesse">Arquitetura e Engenharia de Sistemas complexos;</li>
+            <li class="interesse">Arquitetura baseada em microserviços;</li>
+            <li class="interesse">Internet das Coisas.</li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <h2>Contato</h2>
+        <p>Email: <a href="mailto:mbindileal@gmail.com">mbindileal10@gmail.com</a></p>
+        <p>Telefone: (11)9445-1703</p>
+    </section>
+
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        
+        $("#light").click(function() {
+            $("body").removeClass("dark");
+            $("body").addClass("light");
+        });
+
+        $("#dark").click(function() {
+            $("body").addClass("dark");
+            $("body").removeClass("light");
+        })
+
+        $("#minhafoto").mouseenter(function() {
+            $(this).addClass("foto_com_mouse");
+            $(this).removeClass("foto_sem_mouse");
+        });
+
+        $("#minhafoto").mouseleave(function() {
+            $(this).removeClass("foto_com_mouse");
+            $(this).addClass("foto_sem_mouse");
+        });
+
+
+    });
+</script>
+
+
+</html>
