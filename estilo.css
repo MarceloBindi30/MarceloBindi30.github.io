@@ -1,0 +1,65 @@
+
+
+
+
+.foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background_dark {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.background_red {
+    background-color: red;
+    color: black;
+    transition: 0.5s;
+}
+
+.background_green {
+    background-color: green;
+    color: black;
+    transition: 0.5s;
+}
+
+.texto_grande {
+    font-size: 50px;
+    transition: 0.5s;
+}
+
+.texto_pequeno {
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.foto_com_mouse {
+    width: 220px;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.foto_sem_mouse {
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+#light, #dark {
+    cursor: pointer;
+}
+
+.dark {
+    background-color: rgb(53, 21, 37);
+    color: #fff;
+    transition: 1s;
+}
+
+.light {
+    background-color: #fff;
+    color: #333;
+    transition: 1s;
+}
